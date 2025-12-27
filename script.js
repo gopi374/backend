@@ -31,7 +31,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const message = document.getElementById('message').value;
     
     try {
-        const response = await fetch('http://localhost:3000/api/submit', {
+        const response = await fetch('https://backend-otfd.onrender.com/api/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, message })
